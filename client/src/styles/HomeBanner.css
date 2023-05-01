@@ -1,0 +1,28 @@
+.home-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0px;
+  height: 500px;
+  width: 100vw;
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1682911011/Road-Trip/pexels-rachel-claire-4577859_nzcbd8.jpg');
+  background-size: cover;
+  background-position: center top;
+  /* background-attachment: fixed; */
+  background-color: black;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  opacity: 70%;
+}
+
+.large-logo {
+  /* width: 40vw; */
+  max-width: 300px;
+  margin: auto;
+  margin-top: 100px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  opacity: 100% !important;
+  color: white;
+}

@@ -1,0 +1,14 @@
+.state-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 400px;
+  width: 100vw;
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1682911011/Road-Trip/pexels-rachel-claire-4577859_nzcbd8.jpg');
+  background-size: cover;
+  background-position: center top;
+  /* background-attachment: fixed; */
+  background-color: black;
+  opacity: 70%;
+}
