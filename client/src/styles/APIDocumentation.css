@@ -1,0 +1,46 @@
+.api-header {
+  margin-top: 0px;
+  margin-bottom: -10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.api-documentation {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.api-logo-link {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.api-logo {
+  width: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.api-link {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+

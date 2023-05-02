@@ -5,37 +5,55 @@
   justify-content: center;
   margin: auto;
   margin-top: 0px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
   height: 400px;
   width: 100vw;
-  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1682915859/Road-Trip/pexels-dziana-hasanbekava-5589173_ve91t6.jpg');
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1683057281/Road-Trip/pexels-dziana-hasanbekava-5589173_dlzl7s.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-color: black;
   background-attachment: fixed;
-  opacity: 70%;
 }
 
 .eyebreak-tagline {
-  /* padding-top: 80px; */
+  padding-top: 0px;
   padding-left: 50px;
+  padding-right: 50px;
   font-size: 2em;
+  line-height: 1.15;
+  font-weight: 700;
   color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(73, 73, 73, 0.6);
+}
+
+.eyebreak-description {
+  color: white;
+  padding-left: 50px;
+  width: 440px;
+  font-size: 1.35em;
+  font-weight: 400;
+  line-height: 1.55;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .eyebreak-button {
-  width: 200px;
+  width: 180px;
   margin-left: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-bottom: 12px;
+  padding-right: 30px;
   border: none;
-  border-radius: 4px;
-  background-color: #337152;
+  border-radius: 20px;
+  background-color: green;
   color: white;
   cursor: pointer;
-  opacity: 100% !important;
-  z-index: 9999 !important;
+  font-weight: 700;
+  letter-spacing: .5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
 }
 
 .eyebreak-button:hover {

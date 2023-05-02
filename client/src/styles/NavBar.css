@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   width: 100px;
 }
 
@@ -31,52 +31,35 @@
 }
 
 .menu:hover {
-  color:#337152;
+  color:green;
 }
 
 .logo {
   margin-top: 6px;
-  margin-left: 20px;
-  width: 180px;
+  margin-left: 10px;
+  width: 30px;
 }
 
-.searchbar {
+.plan-new-trip {
   margin-right: 40px;
 }
 
-.search-input {
-  width: 220px;
-  margin-right: 10px;
-  padding: 6px;
-  padding-top: 8px;
-  padding-left: 10px;
-  border: solid 1px #ccc;
-  border-radius: 4px;
-}
-
-.search-input:hover {
-  border: solid 1px #337152;
-}
-
-.search-input:focus {
-  border: solid 1px #337152;
-}
-
-.search-button {
-  padding-top: 8px;
-  padding-left: 20px;
-  padding-bottom: 7px;
-  padding-right: 20px;
+.new-trip-btn {
+  padding-top: 11px;
+  padding-left: 40px;
+  padding-bottom: 11px;
+  padding-right: 40px;
   border: none;
-  border-radius: 4px;
-  background-color: #337152;
+  border-radius: 20px;
+  background-color: green;
   color: white;
+  font-weight: 700;
+  letter-spacing: .5px;
   cursor: pointer;
 }
 
-.search-button:hover {
+.new-trip-btn:hover {
   border: solid 1px #337152;
   background-color: whitesmoke; 
   color: #337152;
-  font-weight: 700;
 }

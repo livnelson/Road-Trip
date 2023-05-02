@@ -6,11 +6,13 @@ function Login({ setUser }) {
   const [errors, setErrors] = useState([])
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate()
 
   function handleSubmit(e) {
     e.preventDefault()
+    setIsLoading(true)
     fetch("/login", {
       method: "POST",
       headers: {
@@ -18,10 +20,11 @@ function Login({ setUser }) {
       },
       body: JSON.stringify({ username, password }),
     }).then((r) => {
+      setIsLoading(false)
       if (r.ok) {
         r.json().then((userData) => {
-          console.log(userData)
           setUser(userData)
+          localStorage.setItem('user', JSON.stringify(userData))
           navigate('/plan_trip')
         })
       } else {
@@ -59,7 +62,7 @@ function Login({ setUser }) {
                 required
               />
               <br />
-              {/* {isLoading ? "Loading..." : null} */}
+              {isLoading ? "Loading..." : null}
               <button className="login-button" type="submit">Sign In</button>
             </form>
           </div>

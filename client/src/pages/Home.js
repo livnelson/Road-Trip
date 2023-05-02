@@ -1,6 +1,7 @@
 import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import EyeBreak from '../components/EyeBreak'
+import APIDocumentation from '../components/APIDocumentation'
 import '../styles/Home.css'
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
         </p>
       </div>
       <EyeBreak />
+      <APIDocumentation />
     </div>
   )
 }

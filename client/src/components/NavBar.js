@@ -1,24 +1,26 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../styles/NavBar.css'
+
 function NavBar() {
+  const navigate = useNavigate()
+
+  const handlePlanVisitClick = () => {
+    navigate('/plan_visit')
+  }
+
   return (
     <div className='navbar'>
       <div className='menu-logo'>
         <p className='menu'>≡</p>
-        <img className='logo' src='' alt='logo' />
+        <img
+          className='logo'
+          src='https://res.cloudinary.com/dovuffpii/image/upload/v1683065902/Road-Trip/road-trip-sm-logo_m034az.png'
+          alt='logo'
+        />
       </div>
-      <div className='searchbar'>
-        <form>
-          <input
-            className='search-input'
-            type='text'
-            value=''
-            // onChange={handleChange}
-            placeholder='What state would you like to visit'
-            required
-          />
-          <button className='search-button'>Go</button>
-        </form>
+      <div className='plan-new-trip'>
+        <button className='new-trip-btn' onClick={handlePlanVisitClick}>Plan Your Visit</button>
       </div>
     </div>
   )
