@@ -1,8 +1,13 @@
+.home-body  {
+  width: 900px;
+  margin: auto;
+}
+
 .tagline {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 60px;
-  width: 580px;
+  /* width: 580px; */
   color: green;
   font-size: 2.25em;
   line-height: 1.25;
@@ -14,7 +19,7 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 68px;
-  width: 440px;
+  /* width: 440px; */
   color: #030303;
   font-size: 1.25em;
   line-height: 1.5;

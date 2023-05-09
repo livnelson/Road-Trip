@@ -1,5 +1,11 @@
 # config/routes.rb
 Rails.application.routes.draw do
-  # route to test your configuration
-  get '/hello', to: 'application#hello_world'
+  resources :states
+  resources :users
+
+  post '/login', to: 'sessions#login'
+
+  get '/me', to: 'users#show'
+  
+  get 'all_states', to: 'states#index'
 end

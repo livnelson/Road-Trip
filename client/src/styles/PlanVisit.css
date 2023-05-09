@@ -1,13 +1,14 @@
 .plan-trip-page {
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .plan-visit-header {
+  margin-bottom: -20px;
   color: green;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.75em;
   font-weight: 700;
   /* text-shadow: 1px 1px 1px rgba(110, 110, 110, 0.1); */
 }
@@ -20,15 +21,16 @@
 
 .visit-form-header {
   text-align: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 16px;
-  color: green;
+  color: #333;
 }
 
 .visit-form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .visit-input {
@@ -36,16 +38,16 @@
   padding-left: 10px;
   padding-bottom: 6px;
   padding-right: 17px;
-  width: 200px;
+  width: 180px;
   border: solid 1px #ccc;
   border-radius: 4px;
 }
 
 .visit-btn {
   padding-top: 8px;
-  padding-left: 20px;
+  padding-left: 24px;
   padding-bottom: 8px;
-  padding-right: 20px;
+  padding-right: 24px;
   margin-left: 10px;
   border: none;
   border-radius: 20px;
@@ -63,10 +65,12 @@
 }
 
 .key {
+  margin:auto; 
   margin-top: 60px;
   margin-bottom: 60px;
   padding-bottom: 11px;
   border: solid 1px #555;
+  max-width: 680px;
 }
 
 .states-key-heading {

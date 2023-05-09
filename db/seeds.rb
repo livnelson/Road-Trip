@@ -1,7 +1,60 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+User.destroy_all
+State.destroy_all
+
+puts "Seeding User 👤"
+user = User.create!(username: 'liv', password: 'password123', first_name: 'liv', last_name: 'nelson', profile_img: '')
+
+puts "Seeding States 🗺️"
+AL = State.create(name: "Alabama", abbreviation: "AL")
+AK = State.create(name: "Alaska", abbreviation: "AK")
+AZ = State.create(name: "Arizona", abbreviation: "AZ")
+AR = State.create(name: "Arkansas", abbreviation: "AR")
+CA = State.create(name: "California", abbreviation: "CA")
+CO = State.create(name: "Colorado", abbreviation: "CO")
+CT = State.create(name: "Connecticut", abbreviation: "CT")
+DE = State.create(name: "Delaware", abbreviation: "DE")
+FL = State.create(name: "Florida", abbreviation: "FL")
+GA = State.create(name: "Georgia", abbreviation: "GA")
+HI = State.create(name: "Hawaii", abbreviation: "HI")
+ID = State.create(name: "Idaho", abbreviation: "ID")
+IL = State.create(name: "Illinios", abbreviation: "IL")
+IN = State.create(name: "Indiana", abbreviation: "IN")
+IA = State.create(name: "Iowa", abbreviation: "IA")
+KS = State.create(name: "Kansas", abbreviation: "KS")
+KY = State.create(name: "Kentuky", abbreviation: "KY")
+LA = State.create(name: "Louisiana", abbreviation: "LA")
+ME = State.create(name: "Maine", abbreviation: "ME")
+MD = State.create(name: "Maryland", abbreviation: "MD")
+MA = State.create(name: "Massachusetts", abbreviation: "MA")
+MI = State.create(name: "Michigan", abbreviation: "MI")
+MN = State.create(name: "Minnesota", abbreviation: "MN")
+MS = State.create(name: "Mississippi", abbreviation: "MS")
+MO = State.create(name: "Missouri", abbreviation: "MO")
+MT = State.create(name: "Montana", abbreviation: "MT")
+NE = State.create(name: "Nebraska", abbreviation: "NE")
+NV = State.create(name: "Nevada", abbreviation: "NV")
+NH = State.create(name: "New Hampshire", abbreviation: "NH")
+NJ = State.create(name: "New Jersey", abbreviation: "NJ")
+NM = State.create(name: "New Mexico", abbreviation: "NM")
+NY = State.create(name: "New York", abbreviation: "NY")
+NC = State.create(name: "North Carolina", abbreviation: "NC")
+ND = State.create(name: "North Dakota", abbreviation: "ND")
+OH = State.create(name: "Ohio", abbreviation: "OH")
+OK = State.create(name: "Oklahoma", abbreviation: "OK")
+OR = State.create(name: "Oregon", abbreviation: "OR")
+PA = State.create(name: "Pennsylvania", abbreviation: "PA")
+RI = State.create(name: "Rhode Island", abbreviation: "RI")
+SC = State.create(name: "South Carolina", abbreviation: "SC")
+SD = State.create(name: "South Dakota", abbreviation: "SD")
+TN = State.create(name: "Tennessee", abbreviation: "TN")
+TX = State.create(name: "Texas", abbreviation: "TX")
+UT = State.create(name: "Utah", abbreviation: "UT")
+VT = State.create(name: "Vermont", abbreviation: "VT")
+VI = State.create(name: "Virgin Islands", abbreviation: "VI")
+VA = State.create(name: "Virginia", abbreviation: "VA")
+WA = State.create(name: "Washington", abbreviation: "WA")
+WV = State.create(name: "West Virginia", abbreviation: "WV")
+WI = State.create(name: "Wisconsin", abbreviation: "WI")
+WY = State.create(name: "Wyoming", abbreviation: "WY")
+
+puts "Done Seeding 🌱"

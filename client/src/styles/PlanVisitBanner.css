@@ -1,0 +1,15 @@
+.plan-visit-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0px;
+  height: 500px;
+  width: 100vw;
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1683395962/Road-Trip/road-trip-planning-map-780x400_savt5u.jpg');
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-color: black;
+  opacity: 70%;
+}
