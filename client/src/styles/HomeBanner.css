@@ -6,14 +6,11 @@
   margin-top: 0px;
   height: 700px;
   width: 100vw;
-  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1682911011/Road-Trip/pexels-rachel-claire-4577859_nzcbd8.jpg');
+  background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1686285936/Road-Trip/pexels-rachel-claire-4577859_nzcbd8_mdykff.jpg');
   background-size: cover;
   background-position: center center;
-  /* background-attachment: fixed; */
-  background-color: black;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  opacity: 70%;
 }
 
 .large-logo {
@@ -30,5 +27,4 @@
 .body {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  opacity: 70%;
 }

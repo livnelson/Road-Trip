@@ -23,6 +23,7 @@ function StateParks({ parks }) {
 
   return (
     <div className='state-parks-page'>
+      <h4 className='state-parks-instruction'>Click on a park name to see more details and plan your trip!</h4>
       {stateParksList}
     </div>
   )

@@ -175,3 +175,8 @@ ul {
 .checkboxes {
   z-index: 9999;
 }
+
+.state-parks-instruction {
+  color:  #337152;
+  text-align: center;
+}
