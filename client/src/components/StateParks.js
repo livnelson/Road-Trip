@@ -2,7 +2,6 @@ import React from 'react'
 import StateParksList from './StateParksList'
 import '../styles/StateParkDetails.css'
 
-
 function StateParks({ parks }) {
 
   const stateParksList = parks.map((park) => {
@@ -17,6 +16,7 @@ function StateParks({ parks }) {
         addresses={park.addresses}
         directionsUrl={park.directionsUrl}
         activities={park.activities}
+        parkCode={park.parkCode}
       />
     )
   })

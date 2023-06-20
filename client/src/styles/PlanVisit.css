@@ -71,12 +71,14 @@
   padding-bottom: 11px;
   border: solid 1px #555;
   max-width: 680px;
+  background-color: white;
 }
 
 .states-key-heading {
   margin-top: 11px;
   margin-bottom: 4px;
   padding-left: 7px;
+  padding-right: 7px;
   color: #999;
 }
 
@@ -89,6 +91,7 @@
 .states-abbr {
   display: inline-block;
   padding-left: 9px;
+  padding-right: 9px;
   font-size: 10px;
   color: #777;
 }

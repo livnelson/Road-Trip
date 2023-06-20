@@ -9,14 +9,19 @@ function NavBar() {
     navigate('/plan_visit')
   }
 
+  const handleLogoClick = () => {
+    navigate('/')
+  }
+
   return (
     <div className='navbar'>
       <div className='menu-logo'>
-        <p className='menu'>≡</p>
+        {/* <p className='menu'>≡</p> */}
         <img
           className='logo'
           src='https://res.cloudinary.com/dovuffpii/image/upload/v1683065902/Road-Trip/road-trip-sm-logo_m034az.png'
           alt='logo'
+          onClick={handleLogoClick}
         />
       </div>
       <div className='plan-new-trip'>

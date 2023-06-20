@@ -1,7 +1,10 @@
 import React from 'react'
+import Campgrounds from './Campgrounds'
 import '../styles/StateParkDetails.css'
 
-function StateParkDetails({ images, name, url, description, addresses, directionsURL, activities }) {
+function StateParkDetails({ images, name, url, description, addresses, directionsURL, activities, parkCode, parkCampgroundsList, mappedCampgroundList  }) {
+
+  console.log(parkCode)
 
   const mappedImages = images.map(image => {
     return (
@@ -17,14 +20,12 @@ function StateParkDetails({ images, name, url, description, addresses, direction
 
   const mappedActivities = activities.map(activity => {
     activityNames.push(activity.name)
-    //saveTrip(mappedActivities)
     return <li key={activity.id}>{activity.name}</li>
   })
 
   // console.log(activityNames)
 
   // console.log(mappedActivities)
-
 
   return (
     <div className='park-details'>
@@ -40,6 +41,9 @@ function StateParkDetails({ images, name, url, description, addresses, direction
         <span className='image-cards'>{mappedImages}</span>
       </div>
       <br />
+      <Campgrounds parkCampgroundsList={parkCampgroundsList} />
+
+    {mappedCampgroundList}
     </div>
   )
 }

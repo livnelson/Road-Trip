@@ -1,10 +1,4 @@
-.state-parks-page {
-  background-color: whitesmoke;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.park-detail-card {
+.campground-detail-card {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -20,7 +14,7 @@
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
-.park-name {
+.campground-name {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -28,36 +22,36 @@
   margin-bottom: 0px;
 }
 
-.park-subheader {
+.campground-subheader {
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
-.park-address {
+.campground-address {
   margin-top: 8px;
   margin-bottom: 4px;
 }
 
-.address {
+.campground-address {
   margin-top: 4px;
   margin-bottom: 4px;
 }
 
-.park-name:hover {
+.campground-name:hover {
   color: #337152;
   cursor: pointer;
 }
 
-.park-name:active {
+.campground-name:active {
   color: #337152;
   cursor: pointer;
 }
 
-.park-details {
+.campground-details {
   margin-top: 20px;
 }
 
-.park-card-image {
+.campground-card-image {
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -74,17 +68,17 @@
   transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
 }
 
-.park-card-image:hover {
+.campground-card-image:hover {
   filter: contrast(100%);
 }
 
 ul {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
-.image-cards {
+.campground-image-cards {
   display: flex;
   flex-wrap: wrap;
   columns: 3;
@@ -93,20 +87,20 @@ ul {
   overflow: hidden;
 }
 
-.image-card-style {
+.campground-image-card-style {
   width: 150px;
   margin-top: 5px;
   margin-left: 4px;
   justify-content: space-around;
 }
 
-.image-title {
+.campground-image-title {
   font-size: 12px;
   margin-top: 0px;
   margin-bottom: 4px;
 }
 
-.photo-cred {
+.campground-photo-cred {
   font-size: 8px;
   font-weight: 300;
   color: #333;
@@ -114,7 +108,7 @@ ul {
   margin-top: 0px;
 }
 
-.activity-details {
+.campground-activity-details {
   margin-top: 4px;
   margin-bottom: 30px;
   margin-left: -20px;
@@ -122,10 +116,10 @@ ul {
   letter-spacing: 1px;
   line-height: 1.35;
   color: #333;
-  max-width: 600px;
+  max-width: 450px;
 }
 
-.park-address {
+.campground-address {
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 13px;
@@ -136,7 +130,7 @@ ul {
   padding-bottom: 0px;
 }
 
-.park-description {
+.campground-description {
   font-size: 13px;
   letter-spacing: .5px;
   line-height: 1.25;
@@ -147,7 +141,7 @@ ul {
   margin-bottom: 0px;
 }
 
-.save-button {
+.campground-save-button {
   z-index: 9999;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -165,16 +159,11 @@ ul {
   font-size: 12px;
 }
 
-.save-button:hover {
+.campground-save-button:hover {
   background-color: #337152;
   cursor: pointer;
 }
 
-.checkboxes {
+.campground-checkboxes {
   z-index: 9999;
-}
-
-.state-parks-instruction {
-  color:  #337152;
-  text-align: center;
 }

@@ -1,11 +1,12 @@
 .home-banner{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-top: 0px;
   height: 700px;
   width: 100vw;
+  padding-top: 60px;
   background-image: url('https://res.cloudinary.com/dovuffpii/image/upload/v1686285936/Road-Trip/pexels-rachel-claire-4577859_nzcbd8_mdykff.jpg');
   background-size: cover;
   background-position: center center;
@@ -13,15 +14,39 @@
   transform: scaleX(-1);
 }
 
-.large-logo {
-  /* width: 40vw; */
-  max-width: 300px;
+.logo-and-tagline {
+  max-width: 75vw;
   margin: auto;
-  margin-top: 120px;
-  /* -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); */
-  opacity: 100% !important;
-  color: white;
+  background-color:  rgba(255, 255, 255, 0.75);
+}
+
+.large-logo {
+  width: 20vw;
+  max-width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(-1);
+}
+
+.tagline {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-top: 60px;
+  color: green;
+  font-size: 2em;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.description {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  padding-bottom: 2em;
+  color: #030303;
+  font-size: 1.25em;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .body {

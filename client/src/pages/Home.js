@@ -9,21 +9,16 @@ function Home() {
     <div>
       <HomeBanner />
       <div className='home-body'>
-        <img
-          className='large-logo'
-          src='https://res.cloudinary.com/dovuffpii/image/upload/v1683057776/Road-Trip/road-trip_j6zboc.png'
-          alt='logo'
-        />
+        <h2 className='plan-visit-header'>WELCOME</h2>
         <p className='plan-visit-description'>
-          This app is designed to help you plan and organize your next adventure to one of the beautiful national parks in the United States. With this app, you can explore various national parks, discover popular attractions, find hiking trails, and make reservations for campsites and other accommodations. Our app provides up-to-date information on park conditions, weather, and road closures, so you can plan your trip accordingly. Whether you're an experienced hiker or a first-time visitor, our National Park Trip Planner App is the perfect tool to help you make the most of your visit and create unforgettable memories in America's natural treasures.
+          Embark on your epic national park adventure with our amazing app! It's your ultimate companion for exploring the stunning national parks of the United States. Discover jaw-dropping attractions, hike breathtaking trails, and plan your trip like a pro. Say goodbye to confusion and hello to convenience as you easily make reservations for campsites and accommodations.
+          <br></br>
+          <br></br>
+          Stay in the know with up-to-the-minute updates on park conditions, weather, and road closures. No more unexpected surprises ruining your journey! Whether you're a seasoned explorer or a first-time visitor, our National Park Trip Planner App is here to make your experience extraordinary.
+          <br></br>
+          <br></br>
+          Unleash your inner adventurer and create unforgettable memories in America's natural treasures. Download our app now and let the fun-filled exploration begin!
         </p>
-
-        {/* <h1 className='tagline'>
-          Making the planning part of your National Park adventure <em>just as fun.</em>
-        </h1>
-        <p className='description'>
-          Route from A to B and discover what you love in between. Plan better trips, collaborate with friends, enjoy the process.
-        </p> */}
       </div>
       <EyeBreak />
       <APIDocumentation />

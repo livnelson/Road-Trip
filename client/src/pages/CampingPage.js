@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import PlanVisitBanner from '../components/PlanVisitBanner'
-import '../styles/PlanVisit.css'
+import React, { useEffect, useState } from 'react'
+import Campgrounds from '../components/Campgrounds'
+import '../styles/CampingPage.css'
 
-function PlanVisit({ user, stateAbbr, setStateAbbr, handleSubmit }) {
+function CampingPage({ stateAbbr, setStateAbbr }) {
   const [statesList, setStateslist] = useState([])
-  console.log(user)
+  const [stateCampgrounds, setStateCampgrounds] = useState([])
+
+  const MY_KEY = 'ejj9Xj8WF8yyAFJIN0Ev3IL3cZrsbkT6CCg0JJ5s'
 
   useEffect(() => {
     // fetches all states names and abbreviations
@@ -25,9 +27,23 @@ function PlanVisit({ user, stateAbbr, setStateAbbr, handleSubmit }) {
     )
   })
 
+  const handleCampingPageSubmit = (e) => {
+    e.preventDefault()
+    console.log('button clicked')
+
+    // fetches state campgrounds
+    fetch(`https://developer.nps.gov/api/v1/campgrounds?stateCode=${stateAbbr}&api_key=${MY_KEY}`)
+      .then((r) => r.json())
+      .then((stateCampgroundsData) => {
+        console.log(stateCampgroundsData)
+        setStateCampgrounds(stateCampgroundsData.data)
+        localStorage.setItem('stateCampgrounds', JSON.stringify(stateCampgroundsData))
+      })
+  }
+
+
   return (
     <div >
-      <PlanVisitBanner />
       <div className='plan-trip-page'>
         {/* <p className='plan-visit-description'>
           This app is designed to help you plan and organize your next adventure to one of the beautiful national parks in the United States. With this app, you can explore various national parks, discover popular attractions, find hiking trails, and make reservations for campsites and other accommodations. Our app provides up-to-date information on park conditions, weather, and road closures, so you can plan your trip accordingly. Whether you're an experienced hiker or a first-time visitor, our National Park Trip Planner App is the perfect tool to help you make the most of your visit and create unforgettable memories in America's natural treasures.        </p> */}
@@ -36,12 +52,12 @@ function PlanVisit({ user, stateAbbr, setStateAbbr, handleSubmit }) {
         </h1>
         <h5 className='visit-form-header'>Enter the 2 letter state abbreviation below to begin your adventure:</h5>
         <div className='visit-form'>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleCampingPageSubmit}>
             <input
               className='visit-input'
               type='text'
               value={stateAbbr}
-              onChange={(e) => {setStateAbbr(e.target.value.toUpperCase())}}
+              onChange={(e) => { setStateAbbr(e.target.value.toUpperCase()) }}
               placeholder='Enter abbreviation here'
               required
             />
@@ -54,9 +70,10 @@ function PlanVisit({ user, stateAbbr, setStateAbbr, handleSubmit }) {
             {stateAbbrKey}
           </div>
         </div>
+        <Campgrounds stateCampgrounds={stateCampgrounds} />
       </div>
     </div>
   )
 }
 
-export default PlanVisit
+export default CampingPage

@@ -1,6 +1,5 @@
 import React from 'react'
 import StateName from './StateName'
-import StateImage from './StateImage'
 import '../styles/StateBanner.css'
 
 function StateBanner({ filteredStates, stateBannerImage }) {
