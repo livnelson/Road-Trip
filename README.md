@@ -34,7 +34,7 @@ National Park Service: https://www.nps.gov/subjects/developer/api-documentation.
 -Add notes and reminders for each itinerary
 
 ## Authors
-Liv Nelson, Kevin Price, John McKinnon
+Liv Nelson
 
 ##Conclusion
 We hope this application makes planning your national park trip easier and more enjoyable. Happy exploring!
