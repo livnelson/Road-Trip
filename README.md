@@ -36,5 +36,5 @@ National Park Service: https://www.nps.gov/subjects/developer/api-documentation.
 ## Authors
 Liv Nelson
 
-##Conclusion
-We hope this application makes planning your national park trip easier and more enjoyable. Happy exploring!
+## Conclusion
+I hope this application makes planning your national park trip easier and more enjoyable. Happy exploring!
