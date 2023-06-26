@@ -6,7 +6,6 @@ import Home from '../pages/Home'
 import Login from '../pages/Login'
 import PlanVisit from '../pages/PlanVisit'
 import StatePage from '../pages/StatePage'
-import CampingPage from '../pages/CampingPage'
 
 function App() {
   const [errors, setErrors] = useState([])
@@ -17,7 +16,6 @@ function App() {
   const [parks, setParks] = useState([])
   const [states, setStates] = useState([])
   const [stateBannerImage, setStateBannerImage] = useState([])
-  const [stateCampgrounds, setStateCampgrounds] = useState([])
 
   const MY_KEY = 'ejj9Xj8WF8yyAFJIN0Ev3IL3cZrsbkT6CCg0JJ5s'
 
@@ -39,40 +37,42 @@ function App() {
 
   // set state park from search bar on Plan Trip page
   function handleSubmit(e) {
-    e.preventDefault();
-  
+    e.preventDefault()
+
     // Fetches all parks based on user input (state abbreviation)
     const parksFetch = fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateAbbr}&limit=50&start=0&api_key=${MY_KEY}`)
       .then((r) => r.json())
       .then((parksArray) => {
-        setParks(parksArray.data);
-        localStorage.setItem('parks', JSON.stringify(parksArray));
-      });
-  
+        setParks(parksArray.data)
+        localStorage.setItem('parks', JSON.stringify(parksArray))
+      })
+
     // Fetches all state names and abbreviations
     const statesFetch = fetch('/all_states')
       .then((r) => r.json())
       .then((statesArray) => {
-        setStates(statesArray);
-      });
-  
+        setStates(statesArray)
+      })
+
     // Fetches state image for state page banner
     const stateImageFetch = fetch(`https://developer.nps.gov/api/v1/multimedia/galleries?parkCode=&stateCode=${stateAbbr}&limit=1&start=1&api_key=${MY_KEY}`)
       .then((r) => r.json())
       .then((stateImage) => {
-        const images = stateImage.data[0].images;
-        const randomIndex = Math.floor(Math.random() * images.length);
-        const randomImageUrl = images[randomIndex].url;
-        setStateBannerImage(randomImageUrl);
+        const images = stateImage.data[0].images
+        const randomIndex = Math.floor(Math.random() * images.length)
+        const randomImageUrl = images[randomIndex].url
+        setStateBannerImage(randomImageUrl)
+        localStorage.setItem('stateBannerImage', JSON.stringify(stateImage))
+
       })
-  
+
     // Wait for all fetch requests to complete before navigating
     Promise.all([parksFetch, statesFetch, stateImageFetch])
       .then(() => {
-        navigate('/visit_state');
-      });
+        navigate('/visit_state')
+      })
   }
-  
+
   return (
     <div className='App'>
       <NavBar />
@@ -91,14 +91,6 @@ function App() {
           parks={parks}
           states={states}
           stateBannerImage={stateBannerImage}
-          stateCampgrounds={stateCampgrounds}
-        />} />
-        <Route path='/go_camping' element={<CampingPage
-          user={user}
-          states={states}
-          stateAbbr={stateAbbr}
-          parks={parks}
-          setStateAbbr={setStateAbbr}
         />} />
       </Routes>
     </div>

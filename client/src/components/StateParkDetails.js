@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Campgrounds from './Campgrounds'
+import Campground from './Campground'
 import '../styles/StateParkDetails.css'
 
-function StateParkDetails({ images, name, url, description, addresses, directionsURL, activities, parkCode, parkCampgroundsList, mappedCampgroundList  }) {
+function StateParkDetails({ images, description, activities, parkCode, parkCampgroundsList }) {
+  const [showCampgrounds, setShowCampgrounds] = useState(false)
 
   console.log(parkCode)
 
@@ -23,6 +25,27 @@ function StateParkDetails({ images, name, url, description, addresses, direction
     return <li key={activity.id}>{activity.name}</li>
   })
 
+  const mappedCampgroundList = parkCampgroundsList.map((campgrounds) => {
+    return (
+      <Campground
+        key={campgrounds.id}
+        id={campgrounds.id}
+        name={campgrounds.name}
+        description={campgrounds.description}
+        directionsURL={campgrounds.directionsURL}
+        imagesURL={campgrounds.imagesURL}
+        reservationInfo={campgrounds.reservationInfo}
+        url={campgrounds.url}
+      />
+    )
+  })
+
+  function handleShowCampgrounds() {
+    setShowCampgrounds(!showCampgrounds)
+  }
+
+      
+
   // console.log(activityNames)
 
   // console.log(mappedActivities)
@@ -41,9 +64,8 @@ function StateParkDetails({ images, name, url, description, addresses, direction
         <span className='image-cards'>{mappedImages}</span>
       </div>
       <br />
-      <Campgrounds parkCampgroundsList={parkCampgroundsList} />
-
-    {mappedCampgroundList}
+      <h4 onClick={handleShowCampgrounds}>See Campgrounds?</h4>
+      <Campgrounds parkCampgroundsList={parkCampgroundsList} mappedCampgroundList={mappedCampgroundList} />
     </div>
   )
 }
