@@ -30,8 +30,8 @@ National Park Service: https://www.nps.gov/subjects/developer/api-documentation.
 <img src='https://liv-creative.com/wp-content/uploads/2023/02/National-Park-Road-Trip-Planner.png' width='300' height='180'> <img src='https://liv-creative.com/wp-content/uploads/2023/02/natl-park-2.png' width='300' height='180'>
 
 ## Future Goals
--View weather forecasts for your trip dates
--Add notes and reminders for each itinerary
+- View weather forecasts for your trip dates
+- Add notes and reminders for each itinerary
 
 ## Authors
 Liv Nelson
