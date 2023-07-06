@@ -2,7 +2,7 @@
 <img src='https://liv-creative.com/wp-content/uploads/2023/02/national-park-trip-planner.png' alt='National Park Trip Plannre Logo' width=200 />
 
 ## Introduction
-Welcome to the National Park Trip Planner, a web application that helps you plan and organize your national park adventures. This application was built with a React front-end and a Ruby on Rails back-end. The goal of this application is to provide a user-friendly platform where you can easily research and plan your trip to any of the national parks in California.
+Welcome to the National Park Trip Planner, a web application that helps you plan and organize your national park adventures. This application was built with a React front-end and a Ruby on Rails back-end. The goal of this application is to provide a user-friendly platform where you can easily research and plan your trip to any of the National Parks in the United States.
 
 ## Features
 - Search for national parks by state or park name
